@@ -1,0 +1,285 @@
+/*
+    =======================================
+    Main Styles
+    =======================================
+*/
+
+/*
+    =======================================
+    CSS Reset
+    =======================================
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+    =======================================
+    TOP HEADER
+    =======================================
+*/
+
+.logo-div {
+  height: 85px;
+  width: 320px;
+  background-color: white;
+  margin: auto;
+  border-radius: 0 0 50% 50%;
+  margin-bottom: 75px;
+}
+
+.logo-div img {
+  width: 380px;
+  margin-left: 15px;
+  margin-top: -24px;
+}
+
+/*
+    =======================================
+    Body
+    =======================================
+*/
+
+body {
+  background-color: #04226c;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+.container {
+}
+
+h1,
+h2 {
+  text-align: center;
+  padding: 0 30px 0 30px;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.top {
+  height: 50px;
+  background-color: white;
+  width: 100%;
+}
+
+.intro-video {
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+iframe {
+  margin: auto;
+  text-align: center;
+}
+
+div {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.span_1_of_2 {
+  vertical-align: top;
+	width: 49.2%;
+  display: inline-block;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.the-left {
+  margin: auto;
+  width: 100%;
+}
+
+/*
+    =======================================
+    Signup
+    =======================================
+*/
+
+.signup {
+  width: 100%;
+  height: 575px;
+  background-color: #faba19;
+  border-radius: 3%;
+}
+
+.fleet {
+  display: inline-block;
+  background-color: white;
+  width: 85px;
+  height: 85px;
+  border-radius: 100%;
+  margin-left: 30px;
+  margin-top: -30px;
+}
+
+.fleet img {
+  display: inline-block;
+  margin: auto;
+  margin-top: 6px;
+  width: 60px;
+  height: 79px;
+  border-radius: 35%;
+  margin-left: 10px;
+}
+
+.signup-now {
+  background-color: #04226c;
+  display: block;
+  width: 350px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 8% 15% 8% 15%;
+  border-radius: 6px;
+}
+
+.signup-now p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 100;
+}
+
+.signup-now:hover {
+  background-color: #052b87;
+  box-shadow: 4px 3px 2px 1px #021543;
+  font-size: 18px;
+}
+
+em {
+  font-style: italic;
+}
+
+.signup h1 {
+  font-weight: 200;
+  color: #04226c;
+}
+
+/*.signup h1 span {
+  font-weight: 400;
+}*/
+
+.signup a {
+  text-decoration: none;
+}
+.signup a:visited {
+  color: white;
+}
+
+/*
+    =======================================
+    Countdown
+    =======================================
+*/
+
+.countdown p {
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.countdown h3,
+.countdown h5 {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.countdown h5 {
+  margin-top: 25px;
+}
+
+/*
+    =======================================
+    Footer
+    =======================================
+*/
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+  background-color: white;
+  height: 50px;
+  color: #04226c;
+}
+
+footer p {
+  padding-top: 20px;
+  font-weight: 200;
+}
+
+/*
+    =======================================
+    Media Queries
+    =======================================
+*/
+
+@media only screen and (max-width: 810px) {
+	.span_2_of_2 {
+		width: 100%;
+	}
+	.span_1_of_2 {
+		width: 100%;
+	}
+  .signup {
+    margin: auto;
+    margin-top: 80px;
+    max-width: 475px;
+  }
+}
