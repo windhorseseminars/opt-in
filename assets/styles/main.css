@@ -36,6 +36,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	max-height: 900px;
 	line-height: 1;
 }
 ol, ul {
@@ -88,6 +89,8 @@ body {
 }
 
 .container {
+	max-height: 1000px;
+	margin-bottom: -50px;
 }
 
 h1,
@@ -253,6 +256,9 @@ em {
 */
 
 footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
   text-align: center;
   margin-top: 100px;
   background-color: white;
