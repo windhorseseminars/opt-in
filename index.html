@@ -6,15 +6,24 @@
   <meta name="viewport" content="width=device-width">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,700,700italic,600,800,800italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css">
+<script type="text/javascript" src="js/jquery.plugin.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+  <style>
+
+  </style>
 </head>
 <body>
-  <div class="top"></div>
-
-  <div class="logo-div">
-    <img src="assets/img/ws-logo.png" alt="">
-  </div>
+  <div class="top-header"></div>
 
   <div class="container">
+    <div class="top"></div>
+
+    <div class="logo-div">
+      <img src="assets/img/ws-logo.png" alt="">
+    </div>
+
     <div class="span_1_of_2">
       <div class="the-left">
 
@@ -35,18 +44,21 @@
           <img src="assets/img/fleet.png" alt="">
         </div>
 
-        <h1>FREE Webinar on <span>Wednesday</span>, <span>January 26</span>, at <span>11:00am PST</span></h1>
+        <br>
+        <br>
+
+        <h1>FREE Webinar on <span>Sunday</span>, <span>March 6</span>, at <span>11:00am PST</span></h1>
 
         <div class="countdown">
 
-          <p>Join author, consultant, and trainer Fleet Maull, as he teaches the 7 Keys to ELIMINATING negative drama from your life.</p>
+          <p>Join author, consultant, and trainer <a class="fm" href="http://fleetmaull.com/" target="_blank">Fleet Maull</a>, as he teaches the 7 Keys to <span>ELIMINATING</span> negative drama from your life.</p>
 
           <h5>The webinar will begin in:</h5>
-          <h3>
-            <SCRIPT language="JavaScript" SRC="http://www.omncdn.com/seminar/cd-v3.php?timezone=US/Pacific&countto=2016-01-27 11:00:23&do=r&l=Array&data=?id=h63cxminpw"></SCRIPT>
-          </h3>
+
+          <div id="noDays"></div>
 
         </div>
+
 
         <a href="http://www.onlinemeetingnow.com/register/?id=h63cxminpw" target="_blank">
           <div class="signup-now">
@@ -59,8 +71,25 @@
 
   </div>
 
+  <div class="testimonials">
+    <h1>See what previous participants of Fleet's coaching programs and online courses have said about their experience:</h1>
+
+    <p>"Fleet's seminar was a great experience of learning within a community. I still think of his teachings, months later, and I remember my coursemates and hope they are flourishing. Thanks for this experience!" - <strong>Monica Bergers</strong></p>
+
+    <p>After training with Fleet, my life is easier, more fun and I have more clarity and I now get the things I want most out of of my relationships, my life purpose and my heart. - <strong>Liz Carey</strong></p>
+
+    <p>"I began with the [Path of Freedom] course and was so impressed with the content that I went through it several times. [Radical Responsibility] was very similar information. This material is so easy to understand and so concise but also includes all necessary information so anyone can lead a happier life. Taking these classes has been helpful to me personally and I continue to practice and share the information with family and friends. I especially appreciate it when I find myself going into reaction mode. It's easier to get back to a peaceful state of mind." - <strong>Nancy Miller</strong></p>
+  </div>
+
+  <br>
+  <br>
+
   <footer>
     <p>© 2016 Windhorse Seminars All Rights Reserved.</p>
   </footer>
+
+  <script>
+    $('#noDays').countdown({until: new Date(2016, 02, 06, 11, 00), timezone: -8, format: 'HMS'});
+  </script>
 </body>
 </html>

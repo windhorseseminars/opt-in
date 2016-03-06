@@ -40,6 +40,10 @@ body {
 	max-height: 900px;
 	line-height: 1;
 }
+strong {
+	font-weight: 800;
+	letter-spacing: 1.1px;
+}
 ol, ul {
 	list-style: none;
 }
@@ -62,16 +66,28 @@ table {
     =======================================
 */
 
+.top-header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+  text-align: center;
+  background-color: white;
+  height: 50px;
+  color: #04226c;
+}
+
 .logo-div {
   height: 85px;
   width: 320px;
   background-color: white;
   margin: auto;
   border-radius: 0 0 50% 50%;
-  margin-bottom: 75px;
+  margin-bottom: 45px;
 }
 
 .logo-div img {
+	position: absolute;
+	display: inline-block;
   width: 300px;
   margin-left: 15px;
   margin-top: -24px;
@@ -90,6 +106,9 @@ body {
 }
 
 .container {
+	max-width: 980px;
+	padding-top: -1px;
+	margin: auto;
 	margin-bottom: 100px;
 }
 
@@ -105,6 +124,10 @@ h1 {
   font-weight: 600;
   margin-bottom: 30px;
 }
+h1:first-of-type {
+	margin-top: 22px;
+}
+
 
 h2 {
   font-size: 20px;
@@ -118,7 +141,7 @@ h2 {
 }
 
 .intro-video {
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
   width: 100%;
 }
@@ -126,6 +149,9 @@ h2 {
 iframe {
   margin: auto;
   text-align: center;
+	-webkit-box-shadow: 23px 31px 79px -15px rgba(153,153,153,1);
+-moz-box-shadow: 23px 31px 79px -15px rgba(153,153,153,1);
+box-shadow: 23px 31px 79px -15px rgba(153,153,153,1);
 }
 
 div {
@@ -145,6 +171,50 @@ div {
 .the-left {
   margin: auto;
   width: 100%;
+	max-height: 600px;
+}
+
+.the-left h1 {
+	font-size: 42px;
+	padding-bottom: 15px;
+}
+
+.the-left h2 {
+	padding-bottom: 20px;
+	color: #faba19;
+	text-shadow: 1px 6px 1px rgba(50, 50, 250, 1);
+}
+
+.testimonials {
+	margin: auto;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	max-width: 800px;
+	text-align: center;
+	border: 1px solid white;
+	border-radius: 8px;
+	padding: 0 20px;
+
+}
+
+.testimonials h1 {
+	margin-top: 40px;
+	margin-bottom: 60px;
+	color: #faba19;
+	text-shadow: 1px 6px 1px rgba(50, 50, 250, 1);
+}
+
+.testimonials p {
+	padding: 20px 30px;
+	max-width: 85%;
+	text-align: center;
+	margin: auto;
+	line-height: 1.5;
+	/*background: white;*/
+	background: linear-gradient(to right top, #faba19 70%, #fcd77d);
+	color: #04226c;
+	border-radius: 6px;
+	margin-bottom: 40px;
 }
 
 /*
@@ -154,46 +224,66 @@ div {
 */
 
 .signup {
+	margin: 66px 0 0 0;
   width: 100%;
-  height: 575px;
-  background-color: #faba19;
+  height: 600px;
+  background: linear-gradient(to right top, #faba19 70%, #fcd77d);
   border-radius: 3%;
+	-webkit-box-shadow: 23px 31px 79px -15px rgba(153,153,153,1);
+     -moz-box-shadow: 23px 31px 79px -15px rgba(153,153,153,1);
+          box-shadow: 23px 31px 79px -15px rgba(153,153,153,1);
+}
+
+.signup h1 {
+	margin: auto;
+	margin-top: 0px;
+	width: 300px;
+}
+
+.signup p {
+	max-width: 330px;
+	margin: auto;
 }
 
 .fleet {
   display: inline-block;
   background-color: white;
-  width: 85px;
-  height: 85px;
+  width: 116px;
+  height: 116px;
   border-radius: 100%;
-  margin-left: 30px;
-  margin-top: -30px;
+  margin-left: 37%;
+  margin-top: -60px;
+	border: 1px solid #aaa;
 }
 
 .fleet img {
   display: inline-block;
   margin: auto;
-  margin-top: 6px;
-  width: 60px;
-  height: 79px;
-  border-radius: 35%;
-  margin-left: 10px;
+  margin-top: 14px;
+  width: 103px;
+  height: 102px;
+  border-radius: 48px;
+  margin-left: 3px;
 }
 
 .signup-now {
-  background-color: #04226c;
+  background: linear-gradient(to left bottom, #04226c 30%, #4f6498);
   display: block;
-  width: 350px;
+  width: 280px;
   margin: auto;
-  margin-top: 50px;
-  padding: 8% 15% 8% 15%;
+  margin-top: 20px;
+  padding: 4% 9%;
   border-radius: 6px;
+	text-align: center;
 }
 
 .signup-now p {
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
-  font-weight: 100;
+  font-weight: 400;
+	max-width: 100%;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
 }
 
 .signup-now:hover {
@@ -216,11 +306,17 @@ em {
 }*/
 
 .signup a {
+	text-align: center;
+	margin: auto;
   text-decoration: none;
 	color: white;
 }
 .signup a:visited {
   color: white;
+}
+.signup a p {
+	text-align: center;
+	margin: auto;
 }
 
 /*
@@ -249,6 +345,28 @@ em {
   margin-top: 25px;
 }
 
+#noDays {
+	width: 300px;
+	background: none;
+	padding: 10px 0 40px 0;
+	font-family: sans-serif;
+	font-size: 20px;
+	border: none;
+	text-align: center;
+	margin: auto;
+}
+
+.fm {
+	color: #031b56 !important;
+	font-weight: 600;
+	letter-spacing: 1.1px;
+}
+.fm:visited {
+	color: #031b56 !important;
+}
+.fm:hover {
+	color: white !important;
+}
 /*
     =======================================
     Footer
@@ -261,7 +379,7 @@ footer {
 	width: 100%;
   text-align: center;
   margin-top: 200px;
-  background-color: white;
+  background: white;
   height: 50px;
   color: #04226c;
 }
@@ -277,6 +395,31 @@ footer p {
     =======================================
 */
 
+@media only screen and (max-width: 1300px) {
+	.testimonials {
+		max-width: 80%;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.testimonials {
+		margin-top: 150px;
+	}
+}
+
+@media only screen and (max-width: 868px) {
+	.testimonials {
+		max-width: 85%;
+	}
+}
+
+@media only screen and (max-width: 822px) {
+	.testimonials {
+		margin-top: 180px;
+	}
+}
+
+
 @media only screen and (max-width: 810px) {
 
 	.span_1_of_2 {
@@ -284,7 +427,73 @@ footer p {
 	}
   .signup {
     margin: auto;
-    margin-top: 80px;
+    margin-top: 130px;
     max-width: 475px;
   }
+	.signup p {
+		padding-left: 30px;
+	}
+	.signup-now p {
+		padding-right: 30px;
+	}
+	.intro-video {
+		width: 90%;
+		text-align: center;
+		margin: auto;
+		margin-top: 20px;
+		margin-bottom: -10px;
+	}
+	.testimonials {
+		margin-top: 0px;
+	}
+}
+
+@media only screen and (max-width: 795px) {
+	.testimonials {
+		margin-top: -30px;
+	}
+}
+
+@media only screen and (max-width: 501px) {
+	.testimonials {
+		max-width: 90%;
+		margin-top: -40px;
+	}
+}
+
+@media only screen and (max-width: 469px) {
+	.signup {
+		margin-top: 180px;
+	}
+}
+
+@media only screen and (max-width: 453px) {
+	.signup {
+		margin-top: 220px;
+	}
+}
+
+@media only screen and (max-width: 440px) {
+
+	.fleet {
+		margin-left: 33%;
+	}
+	.signup p {
+		padding-right: 35px;
+		max-width: 440px;
+	}
+	.signup {
+		height: 650px;
+		margin-top: 200px;
+		max-width: 95%;
+	}
+	.signup-now p {
+		padding-right: 20px;
+	}
+}
+
+@media only screen and (max-width: 419px) {
+	.signup {
+		margin-top: 260px;
+	}
 }
