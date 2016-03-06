@@ -448,32 +448,32 @@ footer p {
 	}
 }
 
-@media only screen and (max-width: 795px) {
+@media screen and (max-width: 795px) {
 	.testimonials {
 		margin-top: -30px;
 	}
 }
 
-@media only screen and (max-width: 501px) {
+@media screen and (max-width: 501px) {
 	.testimonials {
 		max-width: 90%;
 		margin-top: -40px;
 	}
 }
 
-@media only screen and (max-width: 469px) {
+@media screen and (max-width: 469px) {
 	.signup {
 		margin-top: 180px;
 	}
 }
 
-@media only screen and (max-width: 453px) {
+@media screen and (max-width: 453px) {
 	.signup {
 		margin-top: 220px;
 	}
 }
 
-@media only screen and (max-width: 440px) {
+@media screen and (max-width: 440px) {
 
 	.fleet {
 		margin-left: 33%;
@@ -492,7 +492,7 @@ footer p {
 	}
 }
 
-@media only screen and (max-width: 419px) {
+@media screen and (max-width: 419px) {
 	.signup {
 		margin-top: 260px;
 	}
