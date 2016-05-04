@@ -171,7 +171,7 @@ div {
 .the-left {
   margin: auto;
   width: 100%;
-	max-height: 600px;
+	max-height: 750px;
 }
 
 .the-left h1 {
@@ -226,7 +226,7 @@ div {
 .signup {
 	margin: 66px 0 0 0;
   width: 100%;
-  height: 600px;
+  height: 650px;
   background: linear-gradient(to right top, #faba19 70%, #fcd77d);
   border-radius: 3%;
 	-webkit-box-shadow: 23px 31px 79px -15px rgba(153,153,153,1);
@@ -248,10 +248,10 @@ div {
 .fleet {
   display: inline-block;
   background-color: white;
-  width: 116px;
-  height: 116px;
+  width: 147px;
+  height: 147px;
   border-radius: 100%;
-  margin-left: 37%;
+  margin-left: 34%;
   margin-top: -60px;
 	border: 1px solid #aaa;
 }
@@ -259,11 +259,11 @@ div {
 .fleet img {
   display: inline-block;
   margin: auto;
-  margin-top: 14px;
-  width: 103px;
-  height: 102px;
-  border-radius: 48px;
-  margin-left: 3px;
+  margin-top: 24px;
+  width: 123px;
+  height: 122px;
+  border-radius: 49px;
+  margin-left: 10px;
 }
 
 .signup-now {
@@ -335,17 +335,18 @@ em {
 }
 
 .countdown h3,
-.countdown h5 {
-  font-size: 24px;
+.countdown h6 {
+  font-size: 18px;
   line-height: 1.5;
   text-align: center;
 }
 
-.countdown h5 {
-  margin-top: 25px;
+.countdown h6 {
+  margin-top: 18px;
 }
 
-#noDays {
+#noDays,
+#noDays2 {
 	width: 300px;
 	background: none;
 	padding: 10px 0 40px 0;
