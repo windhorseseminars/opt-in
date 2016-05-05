@@ -251,7 +251,7 @@ div {
   width: 147px;
   height: 147px;
   border-radius: 100%;
-  margin-left: 34%;
+  margin-left: 33%;
   margin-top: -60px;
 	border: 1px solid #aaa;
 }
@@ -453,9 +453,16 @@ footer p {
 	.testimonials {
 		margin-top: -30px;
 	}
+	.signup {
+		height: 700px;
+	}
 }
 
 @media screen and (max-device-width: 501px), screen and (max-width: 501px) {
+	.fleet {
+		margin-left: 34%;
+	}
+
 	.testimonials {
 		max-width: 90%;
 		margin-top: -40px;
@@ -463,8 +470,12 @@ footer p {
 }
 
 @media screen and (max-device-width: 469px), screen and (max-width: 469px) {
+	.fleet {
+		margin-left: 31%;
+	}
 	.signup {
 		margin-top: 180px;
+		height: 725px;
 	}
 }
 
@@ -477,14 +488,14 @@ footer p {
 @media screen and (max-device-width: 440px), screen and (max-width: 440px) {
 
 	.fleet {
-		margin-left: 33%;
+		margin-left: 29%;
 	}
 	.signup p {
 		padding-right: 35px;
 		max-width: 440px;
 	}
 	.signup {
-		height: 650px;
+		height: 700px;
 		margin-top: 200px;
 		max-width: 95%;
 	}
